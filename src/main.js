@@ -209,8 +209,8 @@ class MyTelegramBot extends HtmlTelegramBot {
     }
 }
 
-const chatGpt = new ChatGptService("gpt:60Et7Jza9bA4ePGiBCDOJFkblB3TLxR3EqTzYJuFUFITcRHp")
-const bot = new MyTelegramBot("7219086303:AAHPabL0vO4PJ4cXO3XHpWHjIQ-WXNOGPac");
+const chatGpt = new ChatGptService("GPT_TOKEN")
+const bot = new MyTelegramBot("TELEGRAM_TOKEN");
 bot.onCommand(/\/start/, bot.start)
 bot.onCommand(/\/html/, bot.html)
 bot.onCommand(/\/gpt/, bot.gpt)
